@@ -6,6 +6,7 @@ import kotlinx.serialization.Serializable
 data class Project(
     val id: String,
     val title: String,
+    val coverPath: String = "",
     val description: String = "",
     val createdAt: Long = System.currentTimeMillis(),
     val updatedAt: Long = System.currentTimeMillis(),
