@@ -42,5 +42,6 @@ class JsonStorage(private val context: Context) : ProjectRepository {
 
     override suspend fun deleteProject(id: String) = withContext(Dispatchers.IO) {
         File(dir, "$id.json").delete()
+        Unit
     }
 }
